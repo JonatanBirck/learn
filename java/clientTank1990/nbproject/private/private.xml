@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/tiles/DirtTile.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/app/Laucher.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/entities/Enemy.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/view/AuthView.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/ImageLoader.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/img/background2.jpg</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/entities/Creature.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/GameState.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/manager/KeyManager.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Game.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/tiles/BrickTile.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/tiles/GrassTile.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/World.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/img/background.jpg</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/img/background1.jpg</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/entities/Player.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Client.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/State.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Display.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Utils.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/tiles/StoneTile.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Handler.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/entities/Entity.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/tiles/Tile.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/entities/Bot.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/Assets.java</file>
+            <file>file:/C:/Users/jonat/Documents/NetBeansProjects/clientTank1990/src/model/SpriteSheet.java</file>
+        </group>
+    </open-files>
+</project-private>
