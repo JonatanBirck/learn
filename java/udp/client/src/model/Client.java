@@ -5,18 +5,16 @@
  */
 package model;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
-import org.json.JSONObject;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import util.Log;
 
 public class Client 
 {
-    public static Socket socket = null;
-    public static int port = 5000;
-    public static ObjectInputStream in = null;
-    public static ObjectOutputStream out = null;
+    private DatagramSocket clientSocket = null;
+    private InetAddress serverAddress = null;
+    public static int port = 5001;
 
     public Client()
     {
@@ -33,13 +31,12 @@ public class Client
         init( serverAddress, port );
     }
     
-    private void init( String serverAddress, int port )
+    private void init( String address, int port )
     {
         try
         {
-            socket = new Socket( serverAddress, port );
-            in = new ObjectInputStream(socket.getInputStream());
-            out = new ObjectOutputStream(socket.getOutputStream());
+            clientSocket = new DatagramSocket();
+            serverAddress = InetAddress.getByName( address );
         }
         catch( Exception e )
         {
@@ -47,22 +44,26 @@ public class Client
             System.exit(1);
         }
     }
-
-    public static JSONObject request( JSONObject request ) throws Exception
-    {      
-        out.writeObject( request.toString() );
-        
-        String json = (String) in.readObject();
-        return new JSONObject( json );
-    }
+    
+    public void send( byte[] bytes )
+    {              
+        try
+        {
+            DatagramPacket datagramPacket = new DatagramPacket( bytes, bytes.length, this.serverAddress, this.port );
+            clientSocket.send( datagramPacket );
+        }
+        catch( Exception e )
+        {
+            Log.erro(e);
+            System.exit(1);
+        }
+    }  
     
     public void close()
     {
         try
         {
-            out.close();
-            in.close();
-            socket.close();
+            clientSocket.close();
         }
         catch( Exception e )
         {
