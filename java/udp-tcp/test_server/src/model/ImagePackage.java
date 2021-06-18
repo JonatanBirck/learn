@@ -18,6 +18,7 @@ public class ImagePackage implements DataPackage<ImagePackage>
     private short x;
     private short y;
     private byte[] body;
+   
     
     public static short LENGTH_PACKAGE = 2048;
     private static short OFFSET = 5;

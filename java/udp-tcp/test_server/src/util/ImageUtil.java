@@ -33,7 +33,6 @@ public class ImageUtil
 
     public static BufferedImage bytesToBufferedImage( byte[] bytes )
     {
-
         try
         {
             InputStream is = new ByteArrayInputStream(bytes);
