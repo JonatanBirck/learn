@@ -12,7 +12,7 @@
 #
 #numDays( otherDate ) - Retorna o número de dias como um inteiro positivo entre esta data e a outra Data “otherDate”.
 
-from datetime import datetime
+from datetime import date, datetime
 import calendar
 import locale
 
@@ -65,6 +65,18 @@ class DateCalculator:
     def numDaysBetweenFirstAndSecondDate(self):
         return (self.secondDate - self.firstDate).days
 
+    def monthNameOfFirstDate(self):
+        return calendar.month_name[self.firstDate.month]
+
+    def monthNameOfSecondDate(self):
+        return calendar.month_name[self.secondDate.month]
+
+    def firstDateIsWeekday(self):
+        return self.firstDate.weekday() > 4
+
+    def secondDateIsWeekday(self):
+        return self.secondDate.weekday() > 4
+
     pass
 
 # Example
@@ -73,20 +85,22 @@ def teste():
     print('executing...')
     print('')
 
-    dateCalculator = DateCalculator('12/08/2019', '12/09/2019')
+    dateCalculator = DateCalculator('12/08/2019', '17/08/2019')
 
     print('Primeira data!')
     print('Dia:', dateCalculator.dayOfFirstDate() )
-    print('Mês:', dateCalculator.monthOfFirstDate() )
+    print('Mês:', dateCalculator.monthOfFirstDate(), '-' , dateCalculator.monthNameOfFirstDate() )
     print('Ano:', dateCalculator.yearOfFirstDate() )
     print('Semana:', dateCalculator.weekdayOfFirstDate() )
+    print('Final de semana:', dateCalculator.firstDateIsWeekday() )
     print('')
 
     print('Segunda data!')
     print('Dia:', dateCalculator.dayOfSecondDate() )
-    print('Mês:', dateCalculator.monthOfSecondDate() )
+    print('Mês:', dateCalculator.monthOfSecondDate(), '-' , dateCalculator.monthNameOfSecondDate() )
     print('Ano:', dateCalculator.yearOfSecondDate() )
     print('Semana:', dateCalculator.weekdayOfSecondDate() )
+    print('Final de semana:', dateCalculator.secondDateIsWeekday() )
     print('')
 
     print('Primeiro dia é igual ao segundo?', dateCalculator.firstDateEqualsOfSecondDate())
@@ -98,8 +112,3 @@ def teste():
     print('executed')
 
 teste()
-
-
-
-
-
