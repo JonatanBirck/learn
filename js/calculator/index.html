@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+
+        <div class="c-head">
+            <span id="console">0</span>
+        </div>
+
+        <div class="c-body">
+            <button class="button-n" onclick="typed('7')">7</button>
+            <button class="button-n" onclick="typed('8')">8</button>
+            <button class="button-n" onclick="typed('9')">9</button>
+            <button class="button-a" onclick="typed('/')">/</button>
+            <button class="button-n" onclick="typed('4')">4</button>
+            <button class="button-n" onclick="typed('5')">5</button>
+            <button class="button-n" onclick="typed('6')">6</button>
+            <button class="button-a" onclick="typed('*')">*</button>
+            <button class="button-n" onclick="typed('1')">1</button>
+            <button class="button-n" onclick="typed('2')">2</button>
+            <button class="button-n" onclick="typed('3')">3</button>
+            <button class="button-a" onclick="typed('-')">-</button>
+            <button class="button-n" onclick="typed('0')">0</button>
+            <button class="button-n" onclick="typed('.')">.</button>
+            <button class="button-e" onclick="calculate()">=</button>
+            <button class="button-a" onclick="typed('+')">+</button>
+        </div>
+
+        <button class="button-ce" onclick="clean()">CE</button>
+
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

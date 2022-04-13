@@ -1,0 +1,86 @@
+body {
+    margin: 40px;
+    padding: 0px;
+    background-color: rgb(32,33,36);
+}
+
+span {
+    font-size: 24px;
+}
+
+.calculator {
+    max-width: 400px;
+    min-height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.c-head {
+    box-sizing:border-box;
+    padding: 10px;
+    background-color: rgb(32,33,36);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 100px;
+    border-width: medium;
+    border-style: solid; 
+    border-color: rgb(48,49,52);
+    color: white;
+}
+
+.c-body {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 6px;
+}
+
+.button-n {
+    min-height: 50px;
+    border-radius: 4px;
+    background-color: rgb(60,64,67);
+    border-width: 0ch;
+    color: white;
+}
+
+.button-n:hover {
+    background-color: rgb(70,74,77);
+}
+
+.button-a {
+    min-height: 50px;
+    border-radius: 4px;
+    background-color: rgb(95,99,104);
+    border-width: 0ch;
+    color: white;
+}
+
+.button-a:hover {
+    background-color: rgb(105,109,114);
+}
+
+.button-e {
+    min-height: 50px;
+    border-radius: 4px;
+    background-color: rgb(138,180,248);
+    border-width: 0ch;
+}
+
+.button-e:hover {
+    background-color: rgb(148,190,255);
+}
+
+.button-ce {
+    margin-top: 10px;
+    min-width: 140px;
+    min-height: 50px;
+    border-radius: 4px;
+    background-color: rgb(138,180,248);
+    border-width: 0ch;
+    font-size: 20px;
+}
+
+.button-ce:hover {
+    background-color: rgb(148,190,255);
+}

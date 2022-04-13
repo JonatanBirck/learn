@@ -1,0 +1,1 @@
+Criar um esquema de instâncias de objetos com herança utilizando o prototype
